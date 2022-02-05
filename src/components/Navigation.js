@@ -1,5 +1,6 @@
 import React from 'react';
 import './Navigation.css';
+import { Link } from 'react-router-dom';
 
 class Navigation extends React.Component {
     constructor(props) {
@@ -9,21 +10,21 @@ class Navigation extends React.Component {
     render() {
         return (
             <div>
-                <nav className="navbar navbar-expand navbar-dark bg-dark ">
+                <nav className="navbar fixed-top navbar-expand navbar-dark bg-dark">
                     <a className="navbar-brand myNavBrand" href="#">My Portfolio</a>
                     <ul className="navbar-nav mr-auto">
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Home</a>
+                            <Link className="nav-link" to="/">Home</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">About Me</a>
+                            <Link className="nav-link" to="/about">About Me</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Resume</a>
+                            <Link className="nav-link" to="/resume">Resume</Link>
                         </li>
-                        
                     </ul>
                 </nav>
+                <br /><br /><br /><br />
             </div>
         );
     }

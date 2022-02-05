@@ -1,4 +1,5 @@
 import React from 'react';
+import './Home.css';
 
 class Home extends React.Component {
     constructor(props) {
@@ -7,8 +8,9 @@ class Home extends React.Component {
 
     render() {
         return (
-            <div>
-                <h1 className="display-1">Hello World!</h1>
+            <div className="greeter text-center">
+                <h1 className="display-1">Who Is Chris Martinez?</h1>
+                <p className="subtext"><i>A Portfolio of All Projects I Have Worked On</i></p>
             </div>
         );
     }
